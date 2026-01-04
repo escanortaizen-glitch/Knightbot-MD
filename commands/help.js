@@ -87,19 +87,19 @@ async function helpCommand(sock, chatId, message) {
 ╚═══════════════════╝
 
 ╔═══════════════════╗
-🎨 *Image/Sticker Commands*:
-║ ➤ .blur <image>
-║ ➤ .simage <reply to sticker>
-║ ➤ .sticker <reply to image>
-║ ➤ .removebg
-║ ➤ .remini
-║ ➤ .crop <reply to image>
-║ ➤ .tgsticker <Link>
-║ ➤ .meme
-║ ➤ .take <packname> 
-║ ➤ .emojimix <emj1>+<emj2>
-║ ➤ .igs <insta link>
-║ ➤ .igsc <insta link>
+🎨 أوامر الصور/الملصقات:
+║ ➤ .blur <image> — طمس جزء من الصورة
+║ ➤ .simage <reply to sticker> — تحويل ملصق إلى صورة
+║ ➤ .sticker <reply to image> — تحويل صورة إلى ملصق
+║ ➤ .removebg — إزالة خلفية الصورة
+║ ➤ .remini — تحسين جودة الصورة (Remini)
+║ ➤ .crop <reply to image> — قص الصورة
+║ ➤ .tgsticker <Link> — جلب ملصق من رابط تيليجرام
+║ ➤ .meme — إنشاء/جلب ميم جاهز
+║ ➤ .take <packname> — تغيير بيانات حزمة الملصقات
+║ ➤ .emojimix <emj1>+<emj2> — دمج رمزين تعبيريين
+║ ➤ .igs <insta link> — جلب صور من إنستاجرام
+║ ➤ .igsc <insta link> — تحميل ستوري إنستاجرام
 ╚═══════════════════╝  
 
 ╔═══════════════════╗
