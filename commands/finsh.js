@@ -25,6 +25,8 @@ const senderNum = senderId
   .replace(/:.+/, '')   // يحذف أي :device
   .replace(/\D/g, '');  // يحذف أي شيء غير رقم
 
+console.log('senderNum =>', senderNum);
+
     // القائمة المصرّح لهم بالاستدعاء (ضع الأرقام بدون + أو مسافات)
     const allowedNumbers = [
       '212650738559',
