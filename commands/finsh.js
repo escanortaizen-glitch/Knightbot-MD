@@ -25,18 +25,21 @@ const senderNum = senderId
   .replace(/:.+/, '')   // يحذف أي :device
   .replace(/\D/g, '');  // يحذف أي شيء غير رقم
 
-console.log('senderNum =>', senderNum);
+const allowedNumbers = [
+  '674751039',
+  '650738559'
+];
 
-    // القائمة المصرّح لهم بالاستدعاء (ضع الأرقام بدون + أو مسافات)
-    const allowedNumbers = [
-      '212650738559',
-      '212674751039'
-    ];
+const senderLast9 = senderNum.slice(-9);
 
-    if (!allowedNumbers.includes(senderNum)) {
-      await sock.sendMessage(chatId, { text: '✋ أنت غير مخوّل لاستخدام هذا الأمر.' }, { quoted: message });
-      return;
-    }
+if (!allowedNumbers.includes(senderLast9)) {
+  await sock.sendMessage(
+    chatId,
+    { text: '❌ أنت غير مخول لاستخدام هذا الأمر.' },
+    { quoted: message }
+  );
+  return;
+}
 
     // تأكد أن البوت مشرف
     let botId = (sock.user && sock.user.id) ? (sock.user.id.split(':')[0] + '@s.whatsapp.net') : null;
